@@ -48,9 +48,9 @@ public class Libro {
         }
     }
 
+   
     public boolean esMismoTitulo(String otroTitulo) {
-        // Problema 4: comparación de referencias.
-        return titulo == otroTitulo;
+        return java.util.Objects.equals(titulo, otroTitulo);
     }
 
     // Problema 5: método privado nunca utilizado.
